@@ -1,13 +1,19 @@
 #Test task
 sp=[]
-list_of_ints=[-10,-10,1,3,2]
-for i in list_of_ints:
-    sp.append(abs(i))
-a=max(sp)
-sp.remove(a)
-b=max(sp)
-sp.remove(b)
-c=max(sp)
-sp.remove(c)
+sp1=[]
+len_array=int(input("Введи длину массива:" ))
+print("Длина массива:", len_array)
+for i in range(len_array):
+    i=int(input("Введи число для массива:"))
+    sp.append(i)
+print("Наш массив:", sp)
+for j in sp:
+    sp1.append(abs(j))
+a=max(sp1)
+sp1.remove(a)
+b=max(sp1)
+sp1.remove(b)
+c=max(sp1)
+sp1.remove(c)
 result=a*b*c
-print(result)
+print("Результат:", result)
